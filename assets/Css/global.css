@@ -1,0 +1,849 @@
+body {
+    font-family: 'Open-sans';
+    margin: 0px;
+}
+
+.mainOuterDiv {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    box-shadow: 0px -3px 6px #00000029;
+    padding-bottom: 60px;
+    padding-top: 150px;
+}
+
+.navbar {
+    border-radius: 75px;
+    background-color: #FFFFFF;
+    box-shadow: 7px 7px 7px #00000033;
+    padding: 38px 80px 38px 80px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 3;
+}
+
+.buttonFincityDiv {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    align-content: center;
+    width: 100%;
+    border-left: 1px solid #00000033;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.buttonDiv {
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    align-content: center;
+}
+
+.propertyDeveloper {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.navImg {
+    height: 48px;
+}
+
+.ver {
+    border-left: 1px solid #00000033;
+    height: 100%;
+}
+
+.navbarButton {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    border-radius: 36px;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbarButton.mail {
+    background-color: #298EC7;
+}
+
+.navbarButton.call {
+    background-color: #D06619;
+}
+
+.section1 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40% 1fr;
+    position: relative;
+}
+
+.secton1_innerdiv {
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: inset -5px 7px 15px #00000029;
+    background-color: #FFFFFF;
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    font-size: 10px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20px;
+}
+
+.rightSection {
+    position: relative;
+    padding: 80px 0px 80px 80px;
+    z-index: 2;
+}
+
+.buildingImg {
+    border-radius: 50%;
+    width: 580px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+.buildingImg Img {
+    width: 500px;
+    height: 500px;
+    border: 10px solid #00406C;
+    border-radius: 50%;
+}
+.teamImg {
+    border: 10px solid #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 80px;
+    border-radius: 50%;
+}
+
+.rentalText {
+    height: 40px;
+}
+
+.leftSection_main {
+    padding: 70px;
+    z-index: 2;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px;
+}
+
+.circular {
+    border-radius: 80px;
+    box-shadow: 7px 7px 7px #F0B87280;
+    padding: 20px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 32px;
+}
+
+.circular p:first-of-type {
+    font-size: 14px;
+}
+
+.circular p {
+    margin: 4px;
+}
+
+.circular.main{
+    box-shadow: 7px 7px 7px #72B1F080;
+    
+}
+
+.section3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 60px;
+    height: 100%;
+    padding: 120px;
+    border-radius: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.divFour {
+    background-color: #FFFFFF;
+    width: fit-content;
+    border-radius: 40px;
+    padding: 80px;
+    margin-top: 100px;
+    box-shadow: 7px 7px 7px #72B1F029;
+    z-index: 2;
+}
+
+.divFour_header, .sub_header, .row, .column1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sub_header p:first-of-type {
+    padding-left: 20px;
+}
+
+.sub_header p:last-of-type {
+    padding-right: 20px;
+}
+
+.row {
+    padding-bottom: 40px;
+}
+
+.column0 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column0 p {
+    margin: 0px;
+}
+
+.column0 p:first-of-type {
+    color: #f2840d;
+}
+
+.innerDiv_div2 {
+    width: 100%;
+}
+
+.uniqueCode {
+    width: min-content;
+}
+
+.column1 div{
+    border-radius: 62px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 10px 2px;
+}
+
+.divThree {
+    border-radius: 50%;
+    width: 580px;
+    height: 580px;
+    background-color: #ffffff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 20px #72B1F029;
+    z-index: 2;
+}
+
+.divThree img:first-of-type {
+    padding-left: 20px;
+}
+
+.divThree img:last-of-type {
+    padding-right: 20px;
+}
+
+.divTheeImg {
+    width: 500px;
+}
+
+.stripGrid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0px 30px 0px;
+    gap: 20px;
+    width: 480px;
+}
+
+.stripImg {
+    width: 60px;
+    height: 20px;
+}
+
+.itemone {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 7px 7px 7px #72B1F04D;
+    background-color: #ffffff;
+    border-radius: 72px;
+    width: 450px;
+    font-size: 14px;
+    height: 450px;
+    margin-bottom: 80px;
+}
+
+.itemone Img {
+    width: 100%;
+}
+
+.section3Text {
+    width: 100%;
+}
+
+.divOneText {
+    display: flex;
+    width: 100%;
+}
+
+.divOneText p {
+    margin: 6px;
+}
+
+.divOneText1 {
+    display: flex;
+    width: 100%;
+    text-align: right;
+}
+
+.mainText {
+    padding-top: 30px;
+}
+
+.divOne {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.itemtwo {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 7px 7px 7px #72B1F04D;
+    background-color: #ffffff;
+    border-radius: 72px;
+    width: 450px;
+    font-size: 14px;
+}
+
+.itemtwo Img {
+    width: 100%;
+}
+
+.imgOne {
+    width: 300px !important;
+}
+
+.divTwo {
+    padding-top: 40px;
+    padding-left: 200px;
+    z-index: 2;
+}
+
+.itemone {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.itemoneDivHeader {
+    color: #F1850D;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.itemoneDivHeader Img {
+    width: 25px;
+}
+
+.itemoneDivMain {
+    display: flex;
+    color: '#1A1818';
+    justify-content: space-between;
+}
+
+.itemoneDivMain p:first-of-type {
+    width: 66%;
+    text-align: left;
+    padding-left: 38px;
+    margin: 4px 0px 4px 0px;
+}
+
+.itemoneDivMain p:last-of-type {
+    width: 34%;
+    text-align: left;
+    margin: 4px 0px 4px 0px;
+}
+
+.itemoneDivMain.strong {
+    font-weight: bold;
+}
+
+.itemoneDiv {
+    padding: 20px;
+}
+
+.itemoneDiv.mid .itemoneDivHeader {
+    color: #FFFFFF;
+}
+
+.itemoneDiv.mid {
+    border-radius: 36px;
+    color: #FFFFFF;
+}
+
+.section4 {
+    display: grid;
+    padding: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+    justify-items: center;
+    gap: 40px;
+}
+
+.section4 p {
+    font-size: 12px;
+    width: 100%;
+}
+
+.section4 Img {
+    width: 100%;
+}
+
+.header4 {
+    width: 60% !important;
+}
+
+.section5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 60px;
+    height: 100%;
+    padding: 120px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    justify-items: center;
+    position: relative;
+}
+
+.section5 Img {
+    position: absolute;
+    width: 60%;
+    padding-top: 350px;
+}
+
+.header5 {
+    width: 50% !important;
+    position: relative !important;
+    padding-top: 0px !important;
+}
+
+.mainDiv5 {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.mainDiv5 .left, .mainDiv5 .right {
+    width: 100%;
+}
+
+.mainDiv5 {
+    width: 100%;
+}
+
+.mainDiv5 .mid {
+    width: 500px;
+}
+
+.containerDiv p:first-of-type:not(.containerDivMain p:first-of-type) {
+    color: #f2840d;
+    font-size: 20px;
+}
+
+.containerDivMain {
+    padding: 10px 60px 10px 40px;
+    font-size: 16px;
+    line-height: 25px;
+    gap: 4px;
+}
+
+.modalPopup {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.modal {
+    border-radius: 36px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: min-content;
+    gap: 20px;
+    box-shadow: 7px 7px 7px #72B1F04D;
+    position: relative;
+}
+
+.modalHeader {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+}
+
+.modalMain {
+    border-radius: 36px;
+    background-color: #F1F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 120px 40px 120px;
+}
+
+.modalMain Img {
+    width: 60%;
+}
+
+.modalMain Input:not(Input[type='checkbox']), button, .checkbox {
+    border: none;
+    width: 100%;
+    border-radius: 40px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.checkbox {
+    font-size: 11px;
+}
+
+.checkbox span {
+    font-weight: bold;
+}
+
+.modalMain button {
+    background-color: #f2840d;
+    color: #FFFFFF;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.closeIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.section3Image {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 80%;
+    right: 0;
+    margin-top: 80px;
+    margin-right: -560px;
+    
+}
+
+.section3Image2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 674px;
+    margin-right: 280px;
+    z-index: 2;
+}
+
+.section3Image3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 654px;
+    margin-right: 200px;
+    z-index: 2;
+}
+
+.section3Image1 {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    width: 80%;
+    right: 0;
+    margin-top: 300px;
+    margin-right: -300px;
+}
+
+.image_ {
+    position: absolute;
+}
+
+.image_.pattern1 {
+    right: 0;
+    margin: 60px;
+    z-index: 1;
+}
+
+.image_.pattern2 {
+    justify-self: center;
+    bottom: 0;
+    z-index: 1;
+    padding-right: 20px;
+}
+
+.image_.pattern3 {
+    justify-self: center;
+    margin: 40px 80px 40px 80px;
+    padding-left: 100px;
+    z-index: 1;
+}
+
+.image_.pattern4 {
+    left: 0;
+    bottom: 0;
+    margin: 40px 0px 0px 240px;
+    z-index: 1;
+}
+
+.rightSectionMobile {
+    display: none;
+}
+
+.leftSectionMobile {
+    display: none;
+}
+
+.image_.pattern5 {
+    left: 0;
+    margin: 40px;
+    z-index: 1;
+}
+
+.mobile_title {
+    display: none;
+}
+
+#two, #three, #four, #five, #six, #seven, #eight {
+    pointer-events: none;
+}
+
+
+
+@media (max-device-width: 1080px) or (max-width: 1080px) {
+    .propertyDeveloper Img:last-of-type {
+        display: none;
+    }
+
+    .propertyDeveloper  .ver {
+        display: none;
+    }
+
+    .navbarButton {
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .navbarButton p{
+        display: none;
+    } 
+    
+    .navbarButton .ver {
+        display: none;
+    }
+
+    .navbarButton img {
+        transform: scale(1.5);
+    }
+
+    .section1 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: none;
+    }
+
+    .leftSectionMobile {
+        display: block;
+        position: relative;
+        padding: 80px 0px 80px 80px;
+        z-index: 2;
+    }
+
+    .rightSectionMobile {
+        display: block;
+        padding: 80px;
+        z-index: 2;
+    }
+
+    .itemone {
+        width: 80%;
+        height: 80%;
+        padding: 60px;
+    }
+
+    .itemtwo {
+        width: 80%;
+        height: 80%;
+        padding: 60px;
+    }
+
+    .rightSectionMobile .secton1_innerdiv {
+        border-radius: 60px;
+        box-shadow: inset -2px 2px 7px #00000029;
+        background-color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 20px;
+    }
+
+    .section2 {
+        gap: 20px;
+    }
+
+    .divOne {
+        grid-auto-flow: row;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .divTwo {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .divTwo .itemone {
+        width: 100%;
+        padding: 60px;
+    }
+    
+    .mainDiv5 {
+        grid-auto-flow: row;
+    }
+
+    .mainDiv5 .mid{
+        display: none;
+    }
+
+    .section5 Img {
+        display: none;
+    }
+
+    .image_.pattern6 {
+        margin-top: 50%;
+    }
+
+    .leftSection_main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .desktop_title {
+        display: none;
+    }
+
+    .mobile_title {
+        display: block;
+        width: 80% !important;
+        padding-left: 70px;
+    }
+    
+    .rightSection {
+        display: none;
+    }
+
+    .leftSection {
+        display: none;
+    }
+
+    .containerDiv {
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+
+    .containerDiv p:first-of-type:not(.containerDivMain p:first-of-type) {
+        font-size: 36px;
+    }
+
+    .containerDivMain p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    #two, #three, #four, #five, #six, #seven, #eight {
+        display: none;
+        pointer-events: all;
+     }
+ }
+
+ 
+ .pattern8 {
+    position: absolute;
+    width: 145px !important;
+    margin-top: 70px;
+ }
+
+ .image_.pattern6 {
+    position: absolute;
+    width: 400px;
+    right: 0;
+ }
+
+ .section3Image4 {
+    position: absolute;
+    justify-self: center;
+    margin: 100px 0px 0px 200px;
+ }
