@@ -3,288 +3,313 @@
   <head>
     <script src="assets/js/index.js"></script>
     <link rel="stylesheet" href="assets/Css/global.css" />
+    <meta charset="utf-8" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700"
       rel="stylesheet"
     />
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+    <link
+      id="07f57e24-c919-4c3e-8846-98d16cb04f72"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="mainOuterDiv" id="mainOuterDiv">
-      <!-- nav bar -->
-      <div class="navbar" id="navbar">
+    <!-- nav bar -->
+    <!-- <div class="modal">
+      <div class="modalContainer">
+        <div class="modalHeader">
+          <img
+            src="assets/images/navbarIcons/developerIcon.svg"
+            class="navImg"
+            alt="developerIcon"
+          />
+          <img
+            src="assets/images/navbarIcons/propertyIcon.svg"
+            class="navImg"
+            alt="propertyIcon"
+          />
+        </div>
+        <div class="modalMain">
+          <div class="innerDiv_div2">
+            <img src="" alt="#" class="hashIcon" />
+            <span>BOOK</span><span>YOUR SLOT NOW</span>
+          </div>
+          <input type="text" class="name" />
+          <input type="number" class="mobileNo" />
+          <input type="text" class="mobileNo" />
+          <div class="checkbox">
+            <input type="checkbox" />
+            <div>
+              <span>I hereby declare that I have read the comments</span
+              ><span>Read More</span>
+            </div>
+          </div>
+          <button type="button" class="submit"></button>
+        </div>
+      </div>
+    </div> -->
+    <div class="navbar" id="navbar">
+      <div class="navbarDiv">
         <div class="propertyDeveloper">
           <img
             src="assets/images/navbarIcons/developerIcon.svg"
             class="navImg"
+            alt="developerIcon"
           />
-          <div class="ver"></div>
           <img
             src="assets/images/navbarIcons/propertyIcon.svg"
             class="navImg"
+            alt="propertyIcon"
           />
         </div>
         <div class="buttonFincityDiv">
           <div class="buttonDiv">
             <div class="navbarButton call">
-              <img src="assets/images/navbarIcons/callIcon.svg" />
-              <div class="ver"></div>
-              <p>95138-80551</p>
-            </div>
-            <div class="navbarButton mail">
-              <img src="assets/images/navbarIcons/mailIcon.svg" />
-              <div class="ver"></div>
-              <p>ENQUIRY NOW</p>
-            </div>
-          </div>
-          <div class="ver"></div>
-          <div>
-            <img src="assets/images/navbarIcons/fincityIcon.svg" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="header"
-        style="
-          background-image: url('/assets/images/navbarIcons/background.svg');
-        "
-      >
-        <!-- section 1 -->
-        <div class="section1">
-          <img
-            src="assets/images/section1/pattern7.png"
-            class="image_ pattern6"
-          />
-          <img
-            src="assets/images/section1/pattern1.svg"
-            class="image_ pattern1"
-          />
-          <img
-            src="assets/images/section1/pattern2.svg"
-            class="image_ pattern2"
-          />
-          <img
-            src="assets/images/section1/pattern3.svg"
-            class="image_ pattern3"
-          />
-          <img
-            src="assets/images/section1/pattern4.svg"
-            class="image_ pattern4"
-          />
-          <img
-            src="assets/images/section1/pattern5.svg"
-            class="image_ pattern5"
-          />
-          <div class="leftSection">
-            <div class="leftSection_main">
-              <img
-                src="assets/images/navbarIcons/Better Businesshappens here..png"
-              />
-            </div>
-            <div class="secton1_innerdiv">
-              <img src="assets/images/navbarIcons/propertyIcon.svg" />
-              <div class="innerDiv_div2">
-                <img
-                  src="assets/images/navbarIcons/rentalText.png"
-                  class="rentalText"
+              <a href="tel:+9195138-80551"
+                ><img
+                  src="assets/images/navbarIcons/callIcon.svg"
+                  alt="callIcon"
+                  href="tel:+9195138-80551"
                 />
-                <div class="uniqueCode">
-                  PRM/KA/RERA/1251/309/PR/150223/005722
-                </div>
+                <span class="phoneNo">95138-80551</span>
+              </a>
+            </div>
+          </div>
+          <div class="fincityIconClass">
+            <img
+              class="invenstmentIcon"
+              src="/assets/images/navbarIcons/investemnetIcon.svg"
+            />
+            <img
+              class="navImg"
+              src="assets/images/navbarIcons/fincityIcon.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 1 -->
+    <div
+      class="section1"
+      style="background-image: url('assets/images/section1/backgroundImg.png')"
+    >
+      <div class="leftSection">
+        <div class="rentalBoxMobile">PRM/KA/RERA/1251/309/PR/150223/005722</div>
+        <div class="leftSection_main">
+          <p class="betterBusiness">Better Business</p>
+          <p class="happensHere">heppens here.</p>
+        </div>
+        <div class="secton1_innerdiv">
+          <img
+            src="assets/images/navbarIcons/propertyIcon.svg"
+            class="propertyDeveloper"
+          />
+          <div class="innerDiv_div2">
+            <img
+              src="/assets/images/section1/rentalIncome.svg"
+              alt="#"
+              class="rentalText"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="rightSection">
+        <div class="rentalBox">PRM/KA/RERA/1251/309/PR/150223/005722</div>
+      </div>
+      <div class="rightSectionMobile">
+        <div class="secton1_innerdiv">
+          <div class="innerDiv_div2">
+            <img
+              src="/assets/images/navbarIcons/developerIcon.svg"
+              alt="#"
+              class="rentalText"
+            />
+          </div>
+        </div>
+        <div class="secton2_innerdiv">
+          <div class="innerDiv_div2">
+            <img
+              src="/assets/images/section1/rentalIncome.svg"
+              alt="#"
+              class="rentalText"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 2 -->
+    <div class="section2">
+      <div class="circular">
+        <p>Land Area:</p>
+        <p>2.5 Acres</p>
+      </div>
+      <div class="circular main">
+        <p>Configuration:</p>
+        <p>2B+G+8 Floors</p>
+      </div>
+      <div class="circular">
+        <p>Total Saleable Area:</p>
+        <p>2,67,273 sq.ft.</p>
+      </div>
+      <div class="circular main">
+        <p>Total Car Parks:</p>
+        <p>511</p>
+      </div>
+    </div>
+    <div class="section2Mobile">
+      <div class="circular">
+        <p>Land Area:</p>
+        <p>2.5 Acres</p>
+      </div>
+      <div class="circular main">
+        <p>Configuration:</p>
+        <p>2B+G+8 Floors</p>
+      </div>
+      <div class="circular main">
+        <p>Total Car Parks:</p>
+        <p>511</p>
+      </div>
+      <div class="circular">
+        <p>Total Saleable Area:</p>
+        <p>2,67,273 sq.ft.</p>
+      </div>
+    </div>
+    <!-- section 3 -->
+    <div class="section3">
+      <img
+        src="/assets/images/section3/backgroundCircle.png"
+        class="section3Image"
+      />
+      <div class="section5Header">
+        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <p class="headerText">
+          <span>PRIME LOCATION</span> - <span>MAIN ROAD PROPERTY</span>
+        </p>
+      </div>
+      <div class="divOne">
+        <div class="itemone">
+          <div class="section5Header">
+            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <p class="headerText">
+              <span>METRO</span> <span>CONNECTIVITY</span>
+            </p>
+          </div>
+          <img src="assets/images/section3/businessMap.png" />
+          <div class="mainText">
+            <div class="divOneText">
+              <p class="section3Text">Kempapura Metro/ Bus Stop</p>
+              <div class="divOneText1">
+                <p class="section3Text">0.0 Kms</p>
+                <p class="section3Text">1 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Hebbal Metro</p>
+              <div class="divOneText1">
+                <p class="section3Text">1.1 Kms</p>
+                <p class="section3Text">3 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Nagawara Metro</p>
+              <div class="divOneText1">
+                <p class="section3Text">2.8 Kms</p>
+                <p class="section3Text">5 Mins</p>
               </div>
             </div>
           </div>
-          <div class="rightSection">
-            <div
-              class="buildingImg"
-              style="background-image: linear-gradient(90deg, #00406c, #45ade4)"
-            >
-              <img src="assets/images/navbarIcons/buildingImg.png" />
+        </div>
+        <div class="itemtwo">
+          <div class="section5Header">
+            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <p class="headerText"><span>BUSINESS</span> <span>HUB</span></p>
+          </div>
+          <img src="assets/images/section3/hebbalMetro.png" />
+        </div>
+      </div>
+      <div class="divTwo">
+        <div class="itemone">
+          <div class="section5Header">
+            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <p class="headerText"><span>MARKET</span> <span>GROWTH</span></p>
+          </div>
+          <div class="itemoneDiv">
+            <div class="itemoneDivHeader">
+              <img src="assets/images/section3/residentail.webp" />
+              <span>RESIDENTIAL DEVELOPMENTS</span>
             </div>
-            <div class="teamImg">
-              <img src="assets/images/navbarIcons/teamImg.png" />
+            <div class="itemoneDivMain strong">
+              <p>Residential Inventory</p>
+              <p>Upcoming Supply</p>
+            </div>
+            <div class="itemoneDivMain">
+              <p>H1 2022</p>
+              <p>2022-2027</p>
+            </div>
+            <div class="itemoneDivMain strong">
+              <p>40,000 units</p>
+              <p>25,000 units</p>
             </div>
           </div>
-          <div class="leftSectionMobile">
-            <div class="leftSection_main">
-              <img
-                class="desktop_title"
-                src="assets/images/navbarIcons/Better Businesshappens here..png"
-              />
-              <img
-                class="mobile_title"
-                src="assets/images/navbarIcons/BetterBusinesshappens here(mobile)..svg"
-              />
+          <div
+            class="itemoneDiv mid"
+            style="background-image: linear-gradient(90deg, #e69117, #bd411b)"
+          >
+            <div class="itemoneDivHeader">
+              <img src="assets/images/section3/commercial.webp" />
+              <span>COMMERCIAL DEVELOPMENTS</span>
             </div>
-            <div
-              class="buildingImg"
-              style="background-image: linear-gradient(90deg, #00406c, #45ade4)"
-            >
-              <img src="assets/images/navbarIcons/buildingImg.png" />
+            <div class="itemoneDivMain strong">
+              <p>Office Stock</p>
+              <p>Upcoming Supply</p>
             </div>
-            <div class="teamImg">
-              <img src="assets/images/navbarIcons/teamImg.png" />
+            <div class="itemoneDivMain">
+              <p>H1 2022</p>
+              <p>2022-2026</p>
+            </div>
+            <div class="itemoneDivMain strong">
+              <p>18.6 MSF</p>
+              <p>3.3 MSF</p>
             </div>
           </div>
-          <div class="rightSectionMobile">
-            <div class="secton1_innerdiv">
-              <img src="assets/images/navbarIcons/propertyIcon.svg" />
-              <div class="innerDiv_div2">
-                <img
-                  src="assets/images/navbarIcons/rentalText.png"
-                  class="rentalText"
-                />
-                <div class="uniqueCode">
-                  PRM/KA/RERA/1251/309/PR/150223/005722
-                </div>
-              </div>
+          <div class="itemoneDiv">
+            <div class="itemoneDivHeader">
+              <img src="assets/images/section3/retail.webp" />
+              <span>RENTAL DEVELOPMENTS</span>
+            </div>
+            <div class="itemoneDivMain strong">
+              <p>Mail Inventory</p>
+              <p>Upcoming Supply</p>
+            </div>
+            <div class="itemoneDivMain">
+              <p>H1 2022</p>
+              <p>2027</p>
+            </div>
+            <div class="itemoneDivMain strong">
+              <p>1.74 MSF</p>
+              <p>1.2 MSF</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- section 2 -->
-      <div class="section2">
-        <div class="circular">
-          <p>Land Area:</p>
-          <p>2.5 Acres</p>
-        </div>
-        <div class="circular main">
-          <p>Configuration:</p>
-          <p>2B+G+8 Floors</p>
-        </div>
-        <div class="circular">
-          <p>Total Saleable Area:</p>
-          <p>2,67,273 sq.ft.</p>
-        </div>
-        <div class="circular main">
-          <p>Total Car Parks:</p>
-          <p>511</p>
-        </div>
-      </div>
-      <!-- section 3 -->
-      <div
-        class="section3"
-        style="background-image: url('/assets/images/section3/section3.svg')"
-      >
-        <img src="assets/images/section1/pattern6.svg" class="section3Image" />
-        <img src="assets/images/section1/pattern7.png" class="section3Image1" />
-        <img src="assets/images/section1/pattern3.svg" class="section3Image2" />
-        <img src="assets/images/section1/pattern5.svg" class="section3Image3" />
-        <img src="assets/images/section1/pattern2.svg" class="section3Image4" />
-        <div class="divOne">
-          <div class="itemone">
-            <img src="assets/images/section3/TextOne.png" class="imgOne" />
-            <img src="assets/images/section3/mapOne.png" />
-            <div class="mainText">
-              <div class="divOneText">
-                <p class="section3Text">Kempapura Metro/ Bus Stop</p>
-                <div class="divOneText1">
-                  <p class="section3Text">0.0 Kms</p>
-                  <p class="section3Text">1 Mins</p>
-                </div>
-              </div>
-              <div class="divOneText">
-                <p class="section3Text">Hebbal Metro</p>
-                <div class="divOneText1">
-                  <p class="section3Text">1.1 Kms</p>
-                  <p class="section3Text">3 Mins</p>
-                </div>
-              </div>
-              <div class="divOneText">
-                <p class="section3Text">Nagawara Metro</p>
-                <div class="divOneText1">
-                  <p class="section3Text">2.8 Kms</p>
-                  <p class="section3Text">5 Mins</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="itemtwo">
-            <img src="assets/images/section3/businessText.png" class="imgOne" />
-            <img src="assets/images/section3/businessMap.png" />
-          </div>
-        </div>
-        <div class="divTwo">
-          <div class="itemone">
-            <div class="itemoneDiv">
-              <div class="itemoneDivHeader">
-                <img src="assets/images/section3/residentail.png" />
-                <span>RESIDENTIAL DEVELOPMENTS</span>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>Residential Inventory</p>
-                <p>Upcoming Supply</p>
-              </div>
-              <div class="itemoneDivMain">
-                <p>H1 2022</p>
-                <p>2022-2027</p>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>40,000 units</p>
-                <p>25,000 units</p>
-              </div>
-            </div>
-            <div
-              class="itemoneDiv mid"
-              style="background-image: linear-gradient(90deg, #e69117, #bd411b)"
-            >
-              <div class="itemoneDivHeader">
-                <img src="assets/images/section3/commercial.png" />
-                <span>COMMERCIAL DEVELOPMENTS</span>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>Office Stock</p>
-                <p>Upcoming Supply</p>
-              </div>
-              <div class="itemoneDivMain">
-                <p>H1 2022</p>
-                <p>2022-2026</p>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>18.6 MSF</p>
-                <p>3.3 MSF</p>
-              </div>
-            </div>
-            <div class="itemoneDiv">
-              <div class="itemoneDivHeader">
-                <img src="assets/images/section3/retail.png" />
-                <span>RENTAL DEVELOPMENTS</span>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>Mail Inventory</p>
-                <p>Upcoming Supply</p>
-              </div>
-              <div class="itemoneDivMain">
-                <p>H1 2022</p>
-                <p>2027</p>
-              </div>
-              <div class="itemoneDivMain strong">
-                <p>1.74 MSF</p>
-                <p>1.2 MSF</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="divThree">
-          <img src="assets/images/section3/upperCicle.png" class="divTheeImg" />
-          <div class="stripGrid">
-            <img src="assets/images/section3/one.png" class="stripImg" />
-            <img src="assets/images/section3/two.png" class="stripImg" />
-            <img src="assets/images/section3/three.png" class="stripImg" />
-            <img src="assets/images/section3/four.png" class="stripImg" />
-            <img src="assets/images/section3/five.png" class="stripImg" />
-            <img src="assets/images/section3/six.png" class="stripImg" />
-            <img src="assets/images/section3/seven.png" class="stripImg" />
-            <img src="assets/images/section3/eight.png" class="stripImg" />
-            <img src="assets/images/section3/nine.png" class="stripImg" />
-            <img src="assets/images/section3/ten.png" class="stripImg" />
-            <img src="assets/images/section3/eleven.png" class="stripImg" />
-            <img src="assets/images/section3/twelve.png" class="stripImg" />
-          </div>
-          <img src="assets/images/section3/downCicle.png" class="divTheeImg" />
-        </div>
+      <img src="assets/images/section3/upperCicle.png" class="cicleIcon" />
+      <div class="divFourWrapper">
         <div class="divFour">
+          <div class="section5Header">
+            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <p class="headerText"><span>5 YEAR PAYMENTS</span></p>
+          </div>
           <div class="divFour_header">
             <div class="sub_header"></div>
             <div class="sub_header">
@@ -338,104 +363,367 @@
           </div>
         </div>
       </div>
-      <!-- section 4 -->
-      <div class="section4">
-        <img class="header4" src="assets/images/section4/Header.png" />
-        <img class="graph" src="assets/images/section4/graph.png" />
-        <p>Source: Cushman & Wakefield</p>
+    </div>
+    <!-- map section -->
+    <div class="mapSection">
+      <div class="section5Header">
+        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <p class="headerText"><span></span> <span>LOCATION</span></p>
       </div>
-      <!-- section 5 -->
-      <div
-        class="section5"
-        style="background-image: url('/assets/images/section3/section3.svg')"
-      >
-        <img src="assets/images/section5/header.png" class="header5" />
-        <img src="assets/images/section5/background.png" />
-        <img src="assets/images/section5/pattern8.png" class="pattern8" />
+      <div class="mapBox">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.868508345844!2d77.59778985058021!3d13.044040690763248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae178ddb5915e5%3A0x77e3474505378456!2sShriram%20Hebbal%20One!5e0!3m2!1sen!2sin!4v1678446821003!5m2!1sen!2sin"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <!-- section 4 -->
+    <div class="section4">
+      <div class="section5Header">
+        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <p class="headerText">
+          <span>RENTAL TRENDS</span> - <span>MICRO MARKET</span>
+        </p>
+      </div>
+      <img class="graph" src="assets/images/section4/graph.svg" />
+      <p>Source: Cushman & Wakefield</p>
+    </div>
+    <!-- faq section -->
+    <div class="faqSection">
+      <div class="section5Header">
+        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <p class="headerText"><span></span> <span>HAVE MORE QUESTIONS</span></p>
+      </div>
+      <div class="faqMainContainer">
         <div class="mainDiv5">
           <div class="left">
             <div class="containerDiv">
-              <p onclick="excute('one')">CENTRALISED AIR CONDITIONING</p>
+              <div class="containerDivHeader">
+                <p>What is the Undivided Share of Land (UDS) Percentage ?</p>
+                <span onclick="excute('one')" class="one">-</span>
+                <span onclick="excute('one')" id="oneIcon">+</span>
+              </div>
               <div class="containerDivMain" id="one">
+                <div class="eachItems">
+                  <p>
+                    UDS for the area is 29.33%. Calculations are provided below:
+                  </p>
+                  <table>
+                    <tr>
+                      <th>Floor</th>
+                      <th>Total Area</th>
+                      <th>UDS</th>
+                      <th>UDS%</th>
+                    </tr>
+                    <tr>
+                      <td>4th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>8,878.84 sq. ft.</td>
+                      <td>29.33%</td>
+                    </tr>
+                    <tr>
+                      <td>5th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>8,878.84 sq. ft.</td>
+                      <td>29.33%</td>
+                    </tr>
+                    <tr>
+                      <td>6th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>8,878.84 sq. ft.</td>
+                      <td>29.33%</td>
+                    </tr>
+                    <tr>
+                      <td>7th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>8,878.84 sq. ft.</td>
+                      <td>29.33%</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="containerDiv">
+              <div class="containerDivHeader">
+                <p>
+                  What all floors and respective areas are sold through this
+                  offering ?
+                </p>
+                <span onclick="excute('two')" class="two">-</span>
+                <span onclick="excute('two')" id="twoIcon">+</span>
+              </div>
+              <div class="containerDivMain" id="two">
+                <div class="eachItems">
+                  <p>
+                    Currently we are selling Shriram properties share of area on
+                    4th, 5th, 6th and 7th floor. Each floor allocation is as
+                    follows:
+                  </p>
+                  <table>
+                    <tr>
+                      <th>Floor</th>
+                      <th>Total Area</th>
+                      <th>Shriram Properties Share</th>
+                    </tr>
+                    <tr>
+                      <td>4th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>9,631 sq. ft.</td>
+                    </tr>
+                    <tr>
+                      <td>5th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>9,631 sq. ft.</td>
+                    </tr>
+                    <tr>
+                      <td>6th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>9,631 sq. ft.</td>
+                    </tr>
+                    <tr>
+                      <td>7th</td>
+                      <td>30,265.73 sq. ft.</td>
+                      <td>9,631 sq. ft.</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="containerDiv">
+              <div class="containerDivHeader">
+                <p>
+                  Is the rental guaranteed even if space is vacant without
+                  tenants ?
+                </p>
+                <span onclick="excute('three')" class="three">-</span>
+                <span onclick="excute('three')" id="threeIcon">+</span>
+              </div>
+              <div class="containerDivMain" id="three">
+                <div class="eachItems">
+                  <p>
+                    Yes, Shriram properties is providing rental of Rs. 72 per
+                    sq. ft. after Occupancy Certificate (OC) and a 6 month
+                    fit-out period for a 3 year period.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="containerDiv">
+              <div class="containerDivHeader">
+                <p>Is the land owned or Joint Development (JD) ?</p>
+                <span onclick="excute('four')" class="four">-</span>
+                <span onclick="excute('four')" id="fourIcon">+</span>
+              </div>
+              <div class="containerDivMain" id="four">
+                <div class="eachItems">
+                  <p>This is a Joint development with landowners.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="containerDiv">
+              <div class="containerDivHeader">
+                <p>
+                  Can the investment be transferred to any family member during
+                  the tenure ?
+                </p>
+                <span onclick="excute('five')" class="five">-</span>
+                <span onclick="excute('five')" id="fiveIcon">+</span>
+              </div>
+              <div class="containerDivMain" id="five">
+                <div class="eachItems">
+                  <p>There is 3% charge on any sale or transfer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section 5 -->
+    <div class="section5">
+      <div class="section5Header">
+        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <p class="headerText">
+          <span>PROJECT</span> <span>SPECIFICATIONS</span>
+        </p>
+      </div>
+      <div class="mainDiv5">
+        <div class="left">
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>CENTRALISED AIR CONDITIONING</p>
+              <span onclick="excute('one1')" class="one1">-</span>
+              <span onclick="excute('one1')" id="one1Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="one1">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Dedicated AHU rooms provisioned in all floors</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>High-side AC provisioned for 1TR/300 Sq.ft.</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Space provisioned for clients to install DX units for their
                   critical services
                 </p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('two')">STRUCTURAL DESIGN & AMBIENCE</p>
-              <div class="containerDivMain" id="two">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>STRUCTURAL DESIGN & AMBIENCE</p>
+              <span onclick="excute('two2')" class="two2">-</span>
+              <span onclick="excute('two2')" id="two2Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="two2">
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Wide Column Design with service core on one side allows
                   optimal utilization of space
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   P.T. Flat Slab with drop designed as per IS:1893:2016 and
                   IS:13920:2017
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>Slab to Slab Height 3.95 m</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   High Quality glass façade gives excellent permanent finish and
                   keeps the building’s interiors cool
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Structure is designed as below: Basement slabs are designed
                   for stack parking load of 500 Kg/Sq.m.
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Typical office floor is designed for 400 Kg/Sq.m. with false
                   ceiling loading
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Specific areas in the floor designed for higher floor load of
                   1000 Kg/Sq.m.
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   All AHU & Electrical room at typical office floor is designed
                   for 400 Kg/Sq.m.
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>IPS flooring within office Space</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Higher floor to ceiling height provided for accommodating
                   stack parking.
                 </p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('three')">TELECOM CONNECTIVITY</p>
-              <div class="containerDivMain" id="three">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>TELECOM CONNECTIVITY</p>
+              <span onclick="excute('three3')" class="three3">-</span>
+              <span onclick="excute('three3')" id="three3Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="three3">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Right of way provided for service providers</p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('four')">LOBBY FINISHES</p>
-              <div class="containerDivMain" id="four">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>LOBBY FINISHES</p>
+              <span onclick="excute('four4')" class="four4">-</span>
+              <span onclick="excute('four4')" id="four4Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="four4">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Lift Cladding Combination of Granite and Marble</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>Lift Lobby Flooring Granite or Marble Flooring</p>
               </div>
             </div>
           </div>
-          <div class="mid"></div>
-          <div class="right">
-            <div class="containerDiv">
-              <p onclick="excute('five')">ELEVATORS</p>
-              <div class="containerDivMain" id="five">
+        </div>
+        <div class="right">
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>ELEVATORS</p>
+              <span onclick="excute('five5')" class="five5">-</span>
+              <span onclick="excute('five5')" id="five5Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="five5">
+              <div class="eachItems">
+                <span>-</span>
                 <p>High Speed elevators are provided</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>5 Passenger elevators of 15 Pax each</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>2 service elevators of 20 Pax each</p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('six')">POWER</p>
-              <div class="containerDivMain" id="six">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>POWER</p>
+              <span onclick="excute('six6')" class="six6">-</span>
+              <span onclick="excute('six6')" id="six6Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="six6">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Transformer – 1250 kVA x 2 nos</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   100% power backup for office as well as common areas & car
                   parking
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   DG – 1500 kVA x 2 nos - Higher power load (0.8 kVA /100
                   Sq.ft.on super built-up area) is provisioned for computers,
@@ -443,31 +731,101 @@
                 </p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('seven')">WATER & SEWAGE TREATMENT PLANT</p>
-              <div class="containerDivMain" id="seven">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>WATER & SEWAGE TREATMENT PLANT</p>
+              <span onclick="excute('seven7')" class="seven7">-</span>
+              <span onclick="excute('seven7')" id="seven7Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="seven7">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Water Supply from Borewell & Tank Water</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Separate underground Sump, Over Head tanks are provided for
                   Domestic as well as fire Safety needs
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Advanced 105 KLD MBR based Sewage treatment plant is
                   provisioned
                 </p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>Water Treatment Plant is Provisioned</p>
               </div>
             </div>
-            <div class="containerDiv">
-              <p onclick="excute('eight')">SAFETY & SECURITY SYSTEMS</p>
-              <div class="containerDivMain" id="eight">
+          </div>
+          <div class="containerDiv">
+            <div class="containerDivHeader">
+              <p>SAFETY & SECURITY SYSTEMS</p>
+              <span onclick="excute('eight8')" class="eight8">-</span>
+              <span onclick="excute('eight8')" id="eight8Icon">+</span>
+            </div>
+            <div class="containerDivMain" id="eight8">
+              <div class="eachItems">
+                <span>-</span>
                 <p>Designed as per NBC Norms</p>
+              </div>
+              <div class="eachItems">
+                <span>-</span>
                 <p>
                   Base building smoke detectors, fire sprinklers and hose reels
                   in common areas are provisioned
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="enquiry">
+        <div class="section5Header">
+          <img src="/assets/images/hashIcon.png" class="hashIcon" />
+          <p class="headerText">
+            <span>BOOK</span> <span>YOUR SLOTS NOW</span>
+          </p>
+        </div>
+        <div class="enquiryMain">
+          <div class="enquirySubMain">
+            <input type="text" name="name" placeholder="Name" />
+            <input
+              type="tel"
+              onclick="this.setSelectionRange(0, this.value.length)"
+              name="phone"
+              id="phone"
+              placeholder="Mobile Number"
+            />
+            <input type="text" name="email" placeholder="Email Address" />
+          </div>
+          <div class="boxWrapper">
+            <div class="checkboxWrapper">
+              <input type="checkbox" checked="checked" />
+              <p class="readLess" id="read">
+                <span>I hearby declare that I have read the consent...</span
+                ><span id="readLess" onclick="readMore()">Read More</span>
+              </p>
+              <p class="readMore" id="displayMore">
+                I hereby declare that I have read the consent. and I appoint and
+                allow FINCITY to access my credit information from Credit
+                Information Companies in order to understand my credit
+                worthiness and thereinafter provide personalised values which
+                would help them generate the Credit Information Report, Credit
+                Score and Credit Analysis. I/We hereby authorize FINCITY & its
+                affiliates including banking partners to call or SMS and/or
+                WhatsApp with reference to my application or in relation to any
+                of FINCITY products, notwithstanding anything to the contrary
+                that may be contained anywhere, including any registration for
+                DNC/ NDNC.
+              </p>
+            </div>
+            <button class="enquirBbutton">Get More Information</button>
           </div>
         </div>
       </div>
