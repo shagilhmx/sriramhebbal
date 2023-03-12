@@ -660,6 +660,25 @@ button {
     padding: 20px;
 }
 
+input[type='checkbox']:not(:checked) {
+    border-radius: 0px !important;
+    cursor: pointer;
+    accent-color: #FFD358;
+    height: 14px !important;
+    width: 14px !important;
+    outline: none !important;
+    border: none !important;
+ }
+
+ input[type='checkbox']:checked {
+    border-radius: 0px !important;
+    cursor: pointer;
+    accent-color: #FFD358;
+    height: 14px !important;
+    width: 14px !important;
+    border: 1px solid #FFD358;
+ }
+
 .section3Image {
     position: absolute;
     z-index: 1;
@@ -1160,6 +1179,15 @@ button {
         padding: 40px 20px 40px 20px;
      }
 
+     input[type='checkbox']:checked {
+        height: 10px !important;
+        width: 10px !important;
+     }
+
+     input[type='checkbox']:not(:checked) {
+        width: 10px !important;
+        height: 10px !important;
+     }
  }
 
  .eachItems {
@@ -1276,15 +1304,6 @@ button {
     gap: 5px;
     color: white;
     align-items: flex-start;
- }
-
- input[type='checkbox']  {
-    border-radius: 0px !important;
-    cursor: pointer;
-    accent-color: #FFD358;
-    height: 14px !important;
-    width: 14px !important;
-    border: 1px solid #FFD358;
  }
 
  .checkboxWrapper p {
