@@ -1069,7 +1069,7 @@ button {
     }
 
     .section1 {
-        background-image: url('/assets/images/section1/mobileBackground.webp') !important;
+        background-image: url('assets/images/section1/mobileBackground.webp') !important;
         border-bottom-left-radius: 36px;
         border-bottom-right-radius: 36px;
         padding: 20px !important;
@@ -1155,6 +1155,10 @@ button {
 
     .sub_header p:last-of-type {
         padding-right: 0px !important;
+    }
+
+    .modalMain .boxWrapper {
+        height: 80px;
     }
 
     .eachItems span {
@@ -1311,7 +1315,7 @@ button {
 
  .modalMain .boxWrapper {
     width: 100% !important;
-    height: 80px;
+    height: 40px;
     overflow-y: auto;
  }
 
