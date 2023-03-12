@@ -131,6 +131,7 @@ body {
     display: flex;
     gap: 20px;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .secton1_innerdiv .propertyDeveloper {
@@ -186,7 +187,6 @@ body {
     flex-wrap: wrap;
     padding: 80px;
     row-gap: 20px;
-    transition-timing-function: ease-in-out;
 }
 
 .circular {
@@ -291,6 +291,7 @@ body {
     align-items: center;
     justify-content: center;
     height: fit-content;
+    height: -moz-fit-content;
     padding: 10px 2px;
     color: white;
 }
@@ -342,6 +343,7 @@ body {
     background-color: #ffffff;
     border-radius: 72px;
     width: fit-content;
+    width: -moz-fit-content;
     font-size: 14px;
     height: fit-content;
     margin-bottom: 80px;
@@ -391,7 +393,9 @@ body {
     background-color: #ffffff;
     border-radius: 72px;
     width: fit-content;
+    width: -moz-fit-content;
     height: fit-content;
+    height: -moz-fit-content;
     gap: 20px;
     font-size: 14px;
 }
@@ -495,6 +499,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
 }
@@ -800,6 +805,7 @@ button {
         padding: 30px;
         gap: 30px !important;
         border-radius: 36px;
+        align-items: center;
     }
 
     .mapSection {
@@ -808,6 +814,11 @@ button {
     
     .section5Header {
         font-size: 20px !important;
+        margin: unset !important;
+    }
+    
+    .section4 .section5Header {
+        padding-top: 20px !important;
     }
 
     .section5Header Img {
@@ -853,6 +864,10 @@ button {
         padding: 30px;
     }
 
+    .faqSection .section5Header {
+        padding-top: 40px !important;
+    }
+
     .containerDiv {
         padding-left: 0px !important;
         padding-right: 0px !important;
@@ -872,6 +887,7 @@ button {
         gap: 30px !important;
         border-top-right-radius: 36px !important;
         border-top-left-radius: 36px !important;
+        align-items: center;
     }
 
     .boxWrapper {
@@ -1063,10 +1079,6 @@ button {
         padding-right: 0px !important;
     }
 
-    .modalMain .boxWrapper {
-        height: 80px !important;
-    }
-
     .eachItems span {
         padding-top: 10px !important;
     }
@@ -1163,6 +1175,7 @@ button {
      input[type='checkbox'] {
         transform: scale(0.5) !important; 
         margin: 0px !important;
+        padding-bottom: 4px !important;
      }
 
  }
@@ -1199,6 +1212,7 @@ button {
  .modalMain {
     display: flex;
     flex-direction: column;
+    align-items: center;
  }
 
  .modalMain .boxWrapper {
@@ -1342,6 +1356,7 @@ button {
 
  .boxWrapper {
     width: fit-content;
+    width: -moz-fit-content;
     display: flex;
     flex-direction: column;
     gap: 20px;
