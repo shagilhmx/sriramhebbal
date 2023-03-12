@@ -133,13 +133,19 @@ function openApi(event) {
   const utm_terms = url?.searchParams("utm_terms");
 
   let body = {
-    phone: document.getElementById("phoneNumber")?.value,
-    name: document.getElementById("name")?.value,
+    phone:
+      document.getElementById("phoneNumber")?.value ||
+      document.getElementById("phone")?.value,
+    name:
+      document.getElementById("Name")?.value ||
+      document.getElementById("name")?.value,
     propjectId: 22,
     projectConfig: "",
     subSourceId: "",
     campaignCode: "",
-    email: document.getElementById("email")?.value,
+    email:
+      document.getElementById("Email")?.value ||
+      document.getElementById("email")?.value,
     metadata: {
       utm_source: utm_source || 0,
       utm_campaign: utm_campaign || 0,
