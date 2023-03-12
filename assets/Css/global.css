@@ -619,7 +619,7 @@ table, th, td {
     width: 60%;
 }
 
-.modalMain Input:not(Input[type='checkbox']), button, .checkbox {
+.modalMain Input:not(Input[type='checkbox']), button {
     border: none;
     width: 100%;
     border-radius: 40px;
