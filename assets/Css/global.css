@@ -102,7 +102,7 @@ body {
 }
 
 .section1 {
-    --main-image: "url('assets/images/section1/backgroundImg.webp')",
+    --main-image: url('assets/images/section1/backgroundImg.webp');
     background-repeat: no-repeat;
     font-family: 'Arvo' !important;
     background-size: cover;
@@ -147,29 +147,6 @@ body {
     color: white;
     text-shadow: inset -2px 2px 7px #00000029;
     font-size: 13px;
-}
-
-.buildingImg {
-    border-radius: 50%;
-    width: 580px;
-    height: 550px;
-    display: flex;
-    align-items: center;
-}
-
-.buildingImg Img {
-    width: 500px;
-    height: 500px;
-    border: 10px solid #00406C;
-    border-radius: 50%;
-}
-.teamImg {
-    border: 10px solid #ffffff;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-right: 80px;
-    border-radius: 50%;
 }
 
 .innerDiv_div2 {
@@ -596,10 +573,6 @@ table, th, td {
     border: 1px solid black;
   }
 
-.section5 .containerDivMain {
-    line-height: 8px;
-}
-
 .modalPopup {
     width: 100%;
     height: 100%;
@@ -672,14 +645,6 @@ input {
     padding: 20px;
 }
 
-input[type='number']::-webkit-inner-spin-button, 
-input[type='number']::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
 #readLess {
     cursor: pointer;
 }
@@ -704,65 +669,6 @@ button {
     right: 0;
     margin-top: 80px;;
     
-}
-
-.section3Image2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 674px;
-    margin-right: 280px;
-    z-index: 2;
-}
-
-.section3Image3 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 654px;
-    margin-right: 200px;
-    z-index: 2;
-}
-
-.section3Image1 {
-    position: absolute;
-    z-index: 1;
-    overflow: hidden;
-    width: 80%;
-    right: 0;
-    margin-top: 300px;
-    margin-right: -300px;
-}
-
-.image_ {
-    position: absolute;
-}
-
-.image_.pattern1 {
-    right: 0;
-    margin: 60px;
-    z-index: 1;
-}
-
-.image_.pattern2 {
-    justify-self: center;
-    bottom: 0;
-    z-index: 1;
-    padding-right: 20px;
-}
-
-.image_.pattern3 {
-    justify-self: center;
-    margin: 40px 80px 40px 80px;
-    padding-left: 100px;
-    z-index: 1;
-}
-
-.image_.pattern4 {
-    left: 0;
-    bottom: 0;
-    margin: 40px 0px 0px 240px;
-    z-index: 1;
 }
 
 .rightSectionMobile {
@@ -1195,10 +1101,6 @@ button {
         display: none;
     }
 
-    .image_.pattern6 {
-        margin-top: 50%;
-    }
-
     .leftSection_main {
         display: flex;
         justify-content: center;
@@ -1259,25 +1161,6 @@ button {
         padding: 40px 20px 40px 20px;
      }
 
- }
-
- 
- .pattern8 {
-    position: absolute;
-    width: 145px !important;
-    margin-top: 70px;
- }
-
- .image_.pattern6 {
-    position: absolute;
-    width: 400px;
-    right: 0;
- }
-
- .section3Image4 {
-    position: absolute;
-    justify-self: center;
-    margin: 100px 0px 0px 200px;
  }
 
  .eachItems {
@@ -1420,8 +1303,8 @@ button {
     padding: 0px;
     border-radius: 0px;
     border: 1px solid #FFD358;
-    -webkit-appearance: none; /* Remove default checkbox styling for WebKit browsers */
-    -moz-appearance: none; /* Remove default checkbox styling for Firefox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none; 
  }
 
