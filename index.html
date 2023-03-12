@@ -21,12 +21,22 @@
       rel="stylesheet"
       href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <!-- nav bar -->
-    <!-- <div class="modal">
+    <div class="modal" id="modal">
+      <img
+        class="closeIcon"
+        src="assets/images/modalIcons/closeIcon.svg"
+        onclick="closeModal()"
+        alt="closeIcon"
+      />
       <div class="modalContainer">
         <div class="modalHeader">
           <img
@@ -41,24 +51,59 @@
           />
         </div>
         <div class="modalMain">
-          <div class="innerDiv_div2">
-            <img src="" alt="#" class="hashIcon" />
-            <span>BOOK</span><span>YOUR SLOT NOW</span>
+          <div class="section5Header">
+            <img
+              src="assets/images/hashIcon.png"
+              class="hashIcon"
+              alt="hashIcon"
+            />
+            <p class="headerText">
+              <span>BOOK </span> <span>YOUR SLOT NOW</span>
+            </p>
           </div>
-          <input type="text" class="name" />
-          <input type="number" class="mobileNo" />
-          <input type="text" class="mobileNo" />
-          <div class="checkbox">
-            <input type="checkbox" />
-            <div>
-              <span>I hereby declare that I have read the comments</span
-              ><span>Read More</span>
+          <input type="text" name="name" placeholder="Name" id="name" />
+          <input
+            type="tel"
+            onclick="this.setSelectionRange(0, this.value.length)"
+            name="phone"
+            id="phoneNumber"
+            placeholder="Mobile Number"
+            maxlength="10"
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email Address"
+            id="email"
+          />
+          <div class="boxWrapper">
+            <div class="checkboxWrapper">
+              <input type="checkbox" checked="checked" />
+              <p class="readLess" id="read">
+                <span>I hearby declare that I have read the consent...</span
+                ><span id="readLess" onclick="readMore()">Read More</span>
+              </p>
+              <p class="readMore" id="displayMore">
+                I hereby declare that I have read the consent. and I appoint and
+                allow FINCITY to access my credit information from Credit
+                Information Companies in order to understand my credit
+                worthiness and thereinafter provide personalised values which
+                would help them generate the Credit Information Report, Credit
+                Score and Credit Analysis. I/We hereby authorize FINCITY & its
+                affiliates including banking partners to call or SMS and/or
+                WhatsApp with reference to my application or in relation to any
+                of FINCITY products, notwithstanding anything to the contrary
+                that may be contained anywhere, including any registration for
+                DNC/ NDNC.
+              </p>
             </div>
           </div>
-          <button type="button" class="submit"></button>
+          <button class="enquirBbutton" onclick="openApi(event)">
+            Get More Information
+          </button>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="navbar" id="navbar">
       <div class="navbarDiv">
         <div class="propertyDeveloper">
@@ -89,10 +134,12 @@
           <div class="fincityIconClass">
             <img
               class="invenstmentIcon"
-              src="/assets/images/navbarIcons/investemnetIcon.svg"
+              src="assets/images/navbarIcons/investemnetIcon.svg"
+              alt="invenstmentIcon"
             />
             <img
               class="navImg"
+              alt="navImg"
               src="assets/images/navbarIcons/fincityIcon.svg"
             />
           </div>
@@ -114,11 +161,12 @@
           <img
             src="assets/images/navbarIcons/propertyIcon.svg"
             class="propertyDeveloper"
+            alt="propertyDeveloper"
           />
           <div class="innerDiv_div2">
             <img
-              src="/assets/images/section1/rentalIncome.svg"
-              alt="#"
+              src="assets/images/section1/rentalIncome.svg"
+              alt="rentalText"
               class="rentalText"
             />
           </div>
@@ -131,8 +179,8 @@
         <div class="secton1_innerdiv">
           <div class="innerDiv_div2">
             <img
-              src="/assets/images/navbarIcons/developerIcon.svg"
-              alt="#"
+              src="assets/images/navbarIcons/developerIcon.svg"
+              alt="rentalText"
               class="rentalText"
             />
           </div>
@@ -140,8 +188,8 @@
         <div class="secton2_innerdiv">
           <div class="innerDiv_div2">
             <img
-              src="/assets/images/section1/rentalIncome.svg"
-              alt="#"
+              src="assets/images/section1/rentalIncome.svg"
+              alt="rentalText"
               class="rentalText"
             />
           </div>
@@ -188,11 +236,12 @@
     <!-- section 3 -->
     <div class="section3">
       <img
-        src="/assets/images/section3/backgroundCircle.png"
+        src="assets/images/section3/backgroundCircle.png"
         class="section3Image"
+        alt="circle"
       />
       <div class="section5Header">
-        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <img src="assets/images/hashIcon.png" class="hashIcon" alt="hashIcon" />
         <p class="headerText">
           <span>PRIME LOCATION</span> - <span>MAIN ROAD PROPERTY</span>
         </p>
@@ -200,12 +249,16 @@
       <div class="divOne">
         <div class="itemone">
           <div class="section5Header">
-            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <img
+              src="assets/images/hashIcon.png"
+              class="hashIcon"
+              alt="hashIcon"
+            />
             <p class="headerText">
               <span>METRO</span> <span>CONNECTIVITY</span>
             </p>
           </div>
-          <img src="assets/images/section3/businessMap.png" />
+          <img src="assets/images/section3/businessMap.png" alt="map" />
           <div class="mainText">
             <div class="divOneText">
               <p class="section3Text">Kempapura Metro/ Bus Stop</p>
@@ -232,21 +285,32 @@
         </div>
         <div class="itemtwo">
           <div class="section5Header">
-            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <img
+              src="assets/images/hashIcon.png"
+              class="hashIcon"
+              alt="hashIcon"
+            />
             <p class="headerText"><span>BUSINESS</span> <span>HUB</span></p>
           </div>
-          <img src="assets/images/section3/hebbalMetro.png" />
+          <img src="assets/images/section3/hebbalMetro.png" alt="map" />
         </div>
       </div>
       <div class="divTwo">
         <div class="itemone">
           <div class="section5Header">
-            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <img
+              src="assets/images/hashIcon.png"
+              class="hashIcon"
+              alt="hashIcon"
+            />
             <p class="headerText"><span>MARKET</span> <span>GROWTH</span></p>
           </div>
           <div class="itemoneDiv">
             <div class="itemoneDivHeader">
-              <img src="assets/images/section3/residentail.webp" />
+              <img
+                src="assets/images/section3/residentail.webp"
+                alt="residentail"
+              />
               <span>RESIDENTIAL DEVELOPMENTS</span>
             </div>
             <div class="itemoneDivMain strong">
@@ -267,7 +331,10 @@
             style="background-image: linear-gradient(90deg, #e69117, #bd411b)"
           >
             <div class="itemoneDivHeader">
-              <img src="assets/images/section3/commercial.webp" />
+              <img
+                src="assets/images/section3/commercial.webp"
+                alt="commercial"
+              />
               <span>COMMERCIAL DEVELOPMENTS</span>
             </div>
             <div class="itemoneDivMain strong">
@@ -285,7 +352,7 @@
           </div>
           <div class="itemoneDiv">
             <div class="itemoneDivHeader">
-              <img src="assets/images/section3/retail.webp" />
+              <img src="assets/images/section3/retail.webp" alt="rental" />
               <span>RENTAL DEVELOPMENTS</span>
             </div>
             <div class="itemoneDivMain strong">
@@ -303,18 +370,26 @@
           </div>
         </div>
       </div>
-      <img src="assets/images/section3/upperCicle.png" class="cicleIcon" />
+      <img
+        src="assets/images/section3/upperCicle.png"
+        class="cicleIcon"
+        alt="upperCicle"
+      />
       <div class="divFourWrapper">
         <div class="divFour">
           <div class="section5Header">
-            <img src="/assets/images/hashIcon.png" class="hashIcon" />
+            <img
+              src="assets/images/hashIcon.png"
+              class="hashIcon"
+              alt="hashIcon"
+            />
             <p class="headerText"><span>5 YEAR PAYMENTS</span></p>
           </div>
           <div class="divFour_header">
             <div class="sub_header"></div>
             <div class="sub_header">
               <p>PER SQ.FT.</p>
-              <p>PER SQ.FT.</p>
+              <p>PER 500 SQ.FT.</p>
             </div>
           </div>
           <div class="row">
@@ -335,7 +410,7 @@
                   background-image: linear-gradient(90deg, #e69117, #bd411b);
                 "
               >
-                Rs. 43,771
+                Rs. 44,000
               </div>
             </div>
           </div>
@@ -350,7 +425,7 @@
                   background-image: linear-gradient(90deg, #e69117, #bd411b);
                 "
               >
-                Rs. 72
+                Rs. 72 <span>*</span>
               </div>
               <div
                 style="
@@ -361,13 +436,17 @@
               </div>
             </div>
           </div>
+          <div class="hashTrix">
+            *Post OC 6 month fit out period is rent free for tenants as per
+            standard market practice.
+          </div>
         </div>
       </div>
     </div>
     <!-- map section -->
     <div class="mapSection">
       <div class="section5Header">
-        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <img src="assets/images/hashIcon.png" class="hashIcon" alt="hashIcon" />
         <p class="headerText"><span></span> <span>LOCATION</span></p>
       </div>
       <div class="mapBox">
@@ -383,18 +462,18 @@
     <!-- section 4 -->
     <div class="section4">
       <div class="section5Header">
-        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <img src="assets/images/hashIcon.png" class="hashIcon" alt="hashIcon" />
         <p class="headerText">
           <span>RENTAL TRENDS</span> - <span>MICRO MARKET</span>
         </p>
       </div>
-      <img class="graph" src="assets/images/section4/graph.svg" />
+      <img class="graph" src="assets/images/section4/graph.svg" alt="graph" />
       <p>Source: Cushman & Wakefield</p>
     </div>
     <!-- faq section -->
     <div class="faqSection">
       <div class="section5Header">
-        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <img src="assets/images/hashIcon.png" class="hashIcon" alt="hashIcon" />
         <p class="headerText"><span></span> <span>HAVE MORE QUESTIONS</span></p>
       </div>
       <div class="faqMainContainer">
@@ -547,7 +626,7 @@
     <!-- section 5 -->
     <div class="section5">
       <div class="section5Header">
-        <img src="/assets/images/hashIcon.png" class="hashIcon" />
+        <img src="assets/images/hashIcon.png" class="hashIcon" alt="hashIcon" />
         <p class="headerText">
           <span>PROJECT</span> <span>SPECIFICATIONS</span>
         </p>
@@ -787,22 +866,32 @@
       </div>
       <div class="enquiry">
         <div class="section5Header">
-          <img src="/assets/images/hashIcon.png" class="hashIcon" />
+          <img
+            src="assets/images/hashIcon.png"
+            class="hashIcon"
+            alt="hashIcon"
+          />
           <p class="headerText">
             <span>BOOK</span> <span>YOUR SLOTS NOW</span>
           </p>
         </div>
         <div class="enquiryMain">
           <div class="enquirySubMain">
-            <input type="text" name="name" placeholder="Name" />
+            <input type="text" name="name" placeholder="Name" id="name" />
             <input
               type="tel"
               onclick="this.setSelectionRange(0, this.value.length)"
               name="phone"
               id="phone"
               placeholder="Mobile Number"
+              maxlength="10"
             />
-            <input type="text" name="email" placeholder="Email Address" />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              id="email"
+            />
           </div>
           <div class="boxWrapper">
             <div class="checkboxWrapper">
@@ -825,7 +914,9 @@
                 DNC/ NDNC.
               </p>
             </div>
-            <button class="enquirBbutton">Get More Information</button>
+            <button class="enquirBbutton" onclick="openApi(event)">
+              Get More Information
+            </button>
           </div>
         </div>
       </div>

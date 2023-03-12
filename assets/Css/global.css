@@ -191,12 +191,12 @@ body {
     z-index: 2;
 }
 
-#oneIcon, #one1Icon, #two, #three, #four, #five, #two2, #three3, #four4, #five5, #six6, #seven7, #eight8, .two, .two2, .three, .three3, .four, .four4, .five5, .five, .six6,  .seven7, .eight8 {
+#one, #one1, #oneIcon, #one1Icon, #two, #three, #four, #five, #two2, #three3, #four4, #five5, #six6, #seven7, #eight8, .one, .one1, .two, .two2, .three, .three3, .four, .four4, .five5, .five, .six6, .seven7, .eight8 {
     display: none;
     cursor: pointer;
 }
 
- #one, #one1, #twoIcon, #two2Icon, #threeIcon, #three3Icon, #fourIcon, #four4Icon, #fiveIcon, #five5Icon, #six6Icon, #seven7Icon, #eight8Icon, .one, .one1 {
+ #oneIcon, #one1Icon, #twoIcon, #two2Icon, #threeIcon, #three3Icon, #fourIcon, #four4Icon, #fiveIcon, #five5Icon, #six6Icon, #seven7Icon, #eight8Icon {
     display: block;
     cursor: pointer;
 }
@@ -208,6 +208,7 @@ body {
     flex-wrap: wrap;
     padding: 80px;
     row-gap: 20px;
+    transition-timing-function: ease-in-out;
 }
 
 .circular {
@@ -384,6 +385,7 @@ body {
 
 .divOneText p {
     margin: 6px;
+    font-size: 12px !important;
 }
 
 .divOneText1 {
@@ -562,10 +564,14 @@ body {
     font-size: 30px;
 }
 
+.hashTrix {
+    font-size: 10px;
+    text-align: center;
+}
+
 .containerDiv p:first-of-type:not(.containerDivMain p:first-of-type) {
     color: #f2840d;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .containerDivMain {
@@ -618,9 +624,9 @@ table, th, td {
 }
 
 .modalHeader {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     gap: 20px;
+    justify-content: center;
     align-items: center;
     padding: 60px 40px 20px 40px;
 }
@@ -633,7 +639,7 @@ table, th, td {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 40px 70px 60px 70px;
+    padding: 40px 70px 40px 70px;
 }
 
 .modalMain Img:not(.hashIcon) {
@@ -803,6 +809,11 @@ button {
 .section2Mobile {
     display: none;
 }
+
+.invenstmentIcon {
+    margin-right: -32px;
+}
+
 @media (max-device-width: 768px) or (max-width: 768px) {
     .rentalBoxMobile {
         display: block;
@@ -836,6 +847,10 @@ button {
 
     .section2 {
         display: none;
+    }
+
+    .mainText {
+        padding-top: 0px;
     }
 
     .section2Mobile {
@@ -904,7 +919,7 @@ button {
     }
 
     .section4 p:not(.section5Header p) {
-        text-align: center;
+        text-align: left;
         font-size: 10px;
     }
 
@@ -955,7 +970,7 @@ button {
 
     .boxWrapper {
         width: 100% !important;
-        padding: 30px;
+        padding: 20px;
         font-size: 14px;
     }
 
@@ -997,6 +1012,14 @@ button {
         border-left: none;
     }
 
+    .buttonFincityDiv {
+        gap: 16px !important;
+    }
+
+    .row {
+        padding-bottom: 20px !important;
+    } 
+
     .buttonFincityDiv Img:not(.fincityIconClass Img) {
         height: 24px;
     }
@@ -1011,11 +1034,12 @@ button {
 
     .navbarButton {
         border-radius: 50%;
-        padding: 7px 7px 4px 7px;   
+        padding: 3px 7px 3px 7px;   
     }
 
     .navbarButton Img {
-        width: auto !important;
+        width: 14px !important;
+        height: 14px !important;
     }
 
     .buttonDiv {
@@ -1046,7 +1070,8 @@ button {
 
     .section1 {
         background-image: url('/assets/images/section1/mobileBackground.png') !important;
-        border-radius: 36px !important;
+        border-bottom-left-radius: 36px;
+        border-bottom-right-radius: 36px;
         padding: 20px !important;
         height: 100vh;
     }
@@ -1103,6 +1128,7 @@ button {
     .divTwo .itemone {
         width: 100%;
         padding: 20px;
+        gap: 0px;
     }
 
     .divTwo .itemone .itemoneDiv {
@@ -1138,14 +1164,22 @@ button {
     .sub_header p:first-of-type {
         padding-left: 0px !important;
     }
+
+    .mapBox iframe {
+        height: 360px !important;
+     }
     
     .divFour p:not(.section5Header p) {
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     .divFour .column1 div {
         font-size: 10px !important;
         width: 60px !important;
+    }
+
+    .column1 {
+        gap: 5px !important;
     }
     
     .mainDiv5 {
@@ -1202,6 +1236,24 @@ button {
         line-height: 50px;
     }
 
+    .modal {
+        display: none;
+        position: fixed;
+        vertical-align: middle;
+        z-index: 999;
+        top: 0;
+        bottom: 0;
+        margin: auto; /* Will not center vertically and won't work in IE6/7. */
+        left: 0;
+        width: 95% !important;
+        right: 0;
+        border-radius: 50px !important;
+     }
+
+     .modalMain, .modalHeader {
+        padding: 40px 20px 40px 20px;
+     }
+
  }
 
  
@@ -1233,10 +1285,16 @@ button {
  }
 
  .modal {
-    position: absolute;
-    top: 50%;
-    right: 50%;
+    display: none;
+    position: fixed;
+    vertical-align: middle;
     z-index: 999;
+    top: 0;
+    bottom: 0;
+    margin: auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    width: 450px;
+    right: 0;
  }
 
  .modalContainer {
@@ -1249,6 +1307,39 @@ button {
  .modalMain {
     display: flex;
     flex-direction: column;
+ }
+
+ .modalMain .boxWrapper {
+    width: 100% !important;
+    height: 80px;
+    overflow-y: auto;
+ }
+
+ .modalMain .iti {
+    width: 100% !important;
+ }
+
+ .modalMain .iti--separate-dial-code .iti__selected-flag {
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+ }
+
+ .modalMain .iti__country-list {
+    width: 300px !important;
+ }
+
+ .modalMain .boxWrapper .checkboxWrapper {
+    color: black;
+ }
+
+ .modalMain .section5Header {
+    padding-top: 0px !important;
+    font-size: 20px !important;
+ }
+
+ .modalMain .section5Header Img {
+    height: 20px !important;
+    padding-top: 2px !important;
  }
 
  .enquiry {
