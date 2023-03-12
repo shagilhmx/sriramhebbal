@@ -1162,6 +1162,7 @@ button {
 
      input[type='checkbox'] {
         transform: scale(0.5) !important; 
+        margin: 0px !important;
      }
 
  }
