@@ -1069,7 +1069,7 @@ button {
     }
 
     .section1 {
-        background-image: url('/assets/images/section1/mobileBackground.png') !important;
+        background-image: url('/assets/images/section1/mobileBackground.webp') !important;
         border-bottom-left-radius: 36px;
         border-bottom-right-radius: 36px;
         padding: 20px !important;
