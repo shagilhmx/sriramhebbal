@@ -102,6 +102,7 @@ body {
 }
 
 .section1 {
+    --main-image: "url('assets/images/section1/backgroundImg.webp')",
     background-repeat: no-repeat;
     font-family: 'Arvo' !important;
     background-size: cover;
@@ -1069,7 +1070,7 @@ button {
     }
 
     .section1 {
-        background-image: url('assets/images/section1/mobileBackground.webp') !important;
+        --main-image: url('assets/images/section1/mobileBackground.webp');
         border-bottom-left-radius: 36px;
         border-bottom-right-radius: 36px;
         padding: 20px !important;
