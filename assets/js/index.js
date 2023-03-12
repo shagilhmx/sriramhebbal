@@ -257,6 +257,7 @@ window.addEventListener(
       let blur = document.querySelectorAll("body > *:not(#modal");
       blur.forEach((blurElem) => {
         blurElem.style.filter = "blur(5px)";
+        blurElem.style.pointerEvents = "none";
       });
     }, 1000),
   false,
@@ -267,6 +268,7 @@ function closeModal() {
   let blur = document.querySelectorAll("body > *:not(#modal");
   blur.forEach((blurElem) => {
     blurElem.style.filter = "blur(0px)";
+    blurElem.style.pointerEvents = "all";
   });
 }
 

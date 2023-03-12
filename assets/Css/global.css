@@ -1319,9 +1319,9 @@ button {
     width: 100% !important;
  }
 
- .modalMain .iti--separate-dial-code .iti__selected-flag {
-    border-top-left-radius: 15px !important;
-    border-bottom-left-radius: 15px !important;
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: unset !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
  }
 
  .modalMain .iti__country-list {
@@ -1391,9 +1391,33 @@ button {
     align-items: flex-start;
  }
 
+ input[type='checkbox']:checked  {
+    border-radius: 0px;
+    cursor: pointer;
+    border: 1px solid #FFD358;
+ }
+
+ input[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: inline-block;
+    color: white;
+    background-color: #FFD358;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+
  .checkboxWrapper input[type='checkbox'] {
-    height: auto !important;
-    width: auto !important;
+    height: 16px !important;
+    width: 26px !important;
+    background-color: white;
+    padding: 0px;
+    border-radius: 0px;
+    border: 1px solid #FFD358;
+    -webkit-appearance: none; /* Remove default checkbox styling for WebKit browsers */
+    -moz-appearance: none; /* Remove default checkbox styling for Firefox */
+    appearance: none; 
  }
 
  .checkboxWrapper p {

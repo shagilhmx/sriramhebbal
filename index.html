@@ -61,7 +61,13 @@
               <span>BOOK </span> <span>YOUR SLOT NOW</span>
             </p>
           </div>
-          <input type="text" name="name" placeholder="Name" id="name" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            id="name"
+            required
+          />
           <input
             type="tel"
             onclick="this.setSelectionRange(0, this.value.length)"
@@ -69,16 +75,19 @@
             id="phoneNumber"
             placeholder="Mobile Number"
             maxlength="10"
+            required
           />
           <input
             type="text"
             name="email"
             placeholder="Email Address"
             id="email"
+            required
           />
           <div class="boxWrapper">
             <div class="checkboxWrapper">
-              <input type="checkbox" checked="checked" />
+              <input type="checkbox" checked="checked" title="checkbox" />
+              <span class="checkmark"></span>
               <p class="readLess" id="read">
                 <span>I hearby declare that I have read the consent...</span
                 ><span id="readLess" onclick="readMore()">Read More</span>
@@ -98,7 +107,7 @@
               </p>
             </div>
           </div>
-          <button class="enquirBbutton" onclick="openApi(event)">
+          <button class="enquirBbutton" onclick="openApi(event)" type="submit">
             Get More Information
           </button>
         </div>
@@ -877,7 +886,13 @@
         </div>
         <div class="enquiryMain">
           <div class="enquirySubMain">
-            <input type="text" name="name" placeholder="Name" id="name" />
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              id="name"
+              required
+            />
             <input
               type="tel"
               onclick="this.setSelectionRange(0, this.value.length)"
@@ -885,12 +900,14 @@
               id="phone"
               placeholder="Mobile Number"
               maxlength="10"
+              required
             />
             <input
               type="text"
               name="email"
               placeholder="Email Address"
               id="email"
+              required
             />
           </div>
           <div class="boxWrapper">
@@ -914,7 +931,11 @@
                 DNC/ NDNC.
               </p>
             </div>
-            <button class="enquirBbutton" onclick="openApi(event)">
+            <button
+              class="enquirBbutton"
+              onclick="openApi(event)"
+              type="submit"
+            >
               Get More Information
             </button>
           </div>
