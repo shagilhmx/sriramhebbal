@@ -1065,7 +1065,7 @@ button {
     }
 
     .modalMain .boxWrapper {
-        height: 80px;
+        height: 80px !important;
     }
 
     .eachItems span {
