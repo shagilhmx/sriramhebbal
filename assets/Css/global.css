@@ -1278,33 +1278,13 @@ button {
     align-items: flex-start;
  }
 
- input[type='checkbox']:checked  {
+ input[type='checkbox']  {
     border-radius: 0px;
     cursor: pointer;
+    accent-color: #FFD358;
+    height: 16px;
+    width: 16px;
     border: 1px solid #FFD358;
- }
-
- input[type="checkbox"]:checked::before {
-    content: "\2713";
-    display: inline-block;
-    color: white;
-    background-color: #FFD358;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-
- .checkboxWrapper input[type='checkbox'] {
-    height: 16px !important;
-    width: 26px !important;
-    background-color: white;
-    padding: 0px;
-    border-radius: 0px;
-    border: 1px solid #FFD358;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; 
  }
 
  .checkboxWrapper p {
@@ -1361,7 +1341,7 @@ button {
     width: 60%;
  }
 
- #displayMore {
+ #displayMore, #displayMoreTwo {
     display: none;
  }
 

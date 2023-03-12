@@ -28,6 +28,11 @@ function readMore() {
   document.getElementById("read").style.display = "none";
 }
 
+function readMoretwo() {
+  document.getElementById("displayMoreTwo").style.display = "block";
+  document.getElementById("readTwo").style.display = "none";
+}
+
 function createObserver() {
   let observer;
 
