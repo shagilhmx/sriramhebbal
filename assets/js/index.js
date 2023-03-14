@@ -1,14 +1,3 @@
-function excute(data) {
-  document.getElementById(data).style.display =
-    document.getElementById(data).style.display == "block" ? "none" : "block";
-  document.getElementsByClassName(data)[0].style.display =
-    document.getElementsByClassName(data)[0].style.display == "block"
-      ? "none"
-      : "block";
-  document.getElementById(`${data}Icon`).style.display =
-    document.getElementById(data).style.display == "block" ? "none" : "block";
-}
-
 window.onload = function () {
   let input = document.getElementById("phone");
   window.intlTelInput(input, {
@@ -23,6 +12,10 @@ window.onload = function () {
   });
 };
 
+function excute(data) {
+  return;
+}
+
 function readMore() {
   document.getElementById("displayMore").style.display = "block";
   document.getElementById("read").style.display = "none";
@@ -33,53 +26,22 @@ function readMoretwo() {
   document.getElementById("readTwo").style.display = "none";
 }
 
-function createObserver() {
-  let observer;
-
-  let options = {
-    root: null,
-    rootMargin: "0px",
-    threshold: buildThresholdList(),
-  };
-
-  observer = new IntersectionObserver(handleIntersect, options);
-  observer.observe(boxElement);
-}
-
-const numSteps = 20.0;
-
-let boxElement;
-let prevRatio = 0.0;
-let increasingColor = "rgba(40, 40, 190, ratio)";
-let decreasingColor = "rgba(190, 40, 40, ratio)";
-
-// Set things up
 window.addEventListener(
   "load",
   (event) => {
-    observer.observe(document.querySelector(".section1"));
-    observer.observe(document.querySelector(".section2"));
-    observer.observe(document.querySelector(".section2Mobile"));
-    observer.observe(document.querySelector(".itemone"));
-    observer.observe(document.querySelector(".itemtwo"));
-    observer.observe(document.querySelector(".mapSection"));
-    observer.observe(document.querySelector(".section4"));
-    observer.observe(document.querySelector(".faqSection"));
-    observer.observe(document.querySelector(".section5"));
-  },
-  false,
-);
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry?.isIntersecting) {
-        entry?.target?.classList.add("animate__animated", "animate__fadeIn");
-      } else
-        entry?.target?.classList.remove("animate__animated", "animate__fadeIn");
+    $(".clicker").click(function () {
+      if ($(this).hasClass("open")) {
+        $(this).removeClass("open");
+        $(this).find(".containerDivMain").slideUp(500);
+      } else {
+        $(".clicker").find(".containerDivMain").slideUp(500);
+        $(".clicker").removeClass("open");
+        $(this).addClass("open");
+        $(this).find(".containerDivMain").slideDown(500);
+      }
     });
   },
-  { threshold: 0.75 },
+  false,
 );
 
 window.addEventListener(
@@ -108,35 +70,6 @@ function closeModal() {
 function openApi(event) {
   event.stopPropagation();
 
-  let b = {};
-  let url = new URL(window?.location?.href);
-  fetch("https://api-dcrm-stage.fincity.in/open/opportunity", {
-    method: "POST",
-    mode: "no-cors",
-    cache: "no-cache",
-    credentials: "same-origin",
-    headers: {
-      "Content-Type": "application/json",
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    redirect: "follow", // manual, *follow, error
-    referrerPolicy: "origin-when-cross-origin",
-    body: JSON.stringify(b),
-  })
-    .then((response) => response.json())
-    .then((res) => {
-      console.log("success", res);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  if (url.searchParams.entries.length == 0) return;
-  const utm_source = url?.searchParams("utm_source");
-  const utm_campaign = url?.searchParams("utm_campaign");
-  const utm_medium = url?.searchParams("utm_medium");
-  const utm_content = url?.searchParams("utm_content");
-  const utm_terms = url?.searchParams("utm_terms");
-
   let body = {
     phone:
       document.getElementById("phoneNumber")?.value ||
@@ -151,14 +84,29 @@ function openApi(event) {
     email:
       document.getElementById("Email")?.value ||
       document.getElementById("email")?.value,
-    metadata: {
-      utm_source: utm_source || 0,
-      utm_campaign: utm_campaign || 0,
-      utm_content: utm_content || 0,
-      utm_medium: utm_medium || 0,
-      utm_terms: utm_terms || 0,
-    },
   };
+  let url = new URL(window?.location?.href);
+  let headers = new Headers();
+  headers.append("Content-Type", "application/json");
+  fetch("http://api-dcrm-stage.fincity.in/open/opportunity", {
+    method: "POST",
+    headers: headers,
+    body: JSON.stringify(body),
+    redirect: "follow",
+  })
+    .then((response) => response?.json())
+    .then((res) => {
+      console.log("success", res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  if (url.searchParams.entries.length == 0) return;
+  const utm_source = url?.searchParams("utm_source");
+  const utm_campaign = url?.searchParams("utm_campaign");
+  const utm_medium = url?.searchParams("utm_medium");
+  const utm_content = url?.searchParams("utm_content");
+  const utm_terms = url?.searchParams("utm_terms");
 
   console.log(utm_source, utm_campaign, utm_medium, utm_content, utm_terms);
 
@@ -184,4 +132,124 @@ function openApi(event) {
     .catch((err) => {
       console.log(err);
     });
+}
+
+const options = {
+  useEasing: true,
+  useGrouping: true,
+  separator: ",",
+  decimal: ".",
+  decimalPlaces: 1,
+};
+
+options1 = {
+  useEasing: true,
+  useGrouping: true,
+  separator: ",",
+  useIndianSeparators: true,
+};
+
+function animateValue(id, end, round) {
+  const counter = new countUp.CountUp(id, end, round ? options : options1);
+  counter.start();
+}
+
+window.addEventListener(
+  "load",
+  (event) => {
+    observer.observe(document.querySelector(".section4"));
+    observer.observe(document.querySelector(".section2"));
+    observer.observe(document.querySelector(".section2Mobile"));
+  },
+  false,
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry?.isIntersecting) {
+        let chart = document.getElementById("chart");
+        if (Chart.getChart(chart)) Chart.getChart(chart).destroy();
+        load(entry.target.className);
+      } else return;
+    });
+  },
+  { threshold: 0.75 },
+);
+
+function load(val) {
+  if (val == "section2" || val == "section2Mobile") {
+    animateValue("count1", 2.5, true);
+    animateValue("count2", 511, false);
+    animateValue("count3", 267273, false);
+    animateValue("count4", 2.5, true);
+    animateValue("count5", 511, false);
+    animateValue("count6", 267273, false);
+  } else {
+    check =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      );
+    var xyValues = check ? [75, 80, 94, 97] : [71, 75, 75, 80, 93, 94, 98, 97];
+    var labels = check
+      ? [2016, 2018, 2020, "2022H2"]
+      : [2015, 2016, 2017, 2018, 2019, 2020, 2021, "2022H2"];
+
+    new Chart("chart", {
+      type: "line",
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            pointBackgroundColor: "#e7641f",
+            data: xyValues,
+            fill: false,
+            tension: 0,
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        responsive: true,
+        scales: {
+          x: {
+            offset: true,
+            ticks: {
+              min: 2015,
+              max: "2022H",
+            },
+            grid: {
+              offsetGridLines: true,
+              display: false,
+            },
+          },
+
+          y: {
+            title: {
+              display: true,
+              text: "Per Sq. Ft. Rental",
+              font: {
+                size: check ? 12 : 16,
+              },
+            },
+            scaleLabel: {
+              display: true,
+            },
+            ticks: {
+              min: 60,
+              max: 100,
+              stepSize: 10,
+            },
+            grid: {
+              display: false,
+            },
+          },
+        },
+      },
+    });
+  }
 }

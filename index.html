@@ -8,6 +8,17 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+      integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Arvo"
       rel="stylesheet"
@@ -16,6 +27,7 @@
       rel="stylesheet"
       href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -190,7 +202,7 @@
         <div class="rentalBox">PRM/KA/RERA/1251/309/PR/150223/005722</div>
       </div>
       <div class="rightSectionMobile">
-        <div class="secton1_innerdiv">
+        <div class="secton1_innerdiv" data-aos="fade-right">
           <div class="innerDiv_div2">
             <img
               src="assets/images/navbarIcons/developerIcon.svg"
@@ -200,7 +212,7 @@
             />
           </div>
         </div>
-        <div class="secton2_innerdiv">
+        <div class="secton2_innerdiv" data-aos="fade-left">
           <div class="innerDiv_div2">
             <img
               src="assets/images/section1/rentalIncome.svg"
@@ -216,7 +228,7 @@
     <div class="section2">
       <div class="circular">
         <p>Land Area:</p>
-        <p>2.5 Acres</p>
+        <p id="count1">2.5 Acres</p>
       </div>
       <div class="circular main">
         <p>Configuration:</p>
@@ -224,17 +236,17 @@
       </div>
       <div class="circular">
         <p>Total Saleable Area:</p>
-        <p>2,67,273 sq.ft.</p>
+        <p id="count3">2,67,273 sq.ft.</p>
       </div>
       <div class="circular main">
         <p>Total Car Parks:</p>
-        <p>511</p>
+        <p id="count2">511</p>
       </div>
     </div>
     <div class="section2Mobile">
       <div class="circular">
         <p>Land Area:</p>
-        <p>2.5 Acres</p>
+        <p id="count4">2.5 Acres</p>
       </div>
       <div class="circular main">
         <p>Configuration:</p>
@@ -242,11 +254,11 @@
       </div>
       <div class="circular main">
         <p>Total Car Parks:</p>
-        <p>511</p>
+        <p id="count6">511</p>
       </div>
       <div class="circular">
         <p>Total Saleable Area:</p>
-        <p>2,67,273 sq.ft.</p>
+        <p id="count5">2,67,273 sq.ft.</p>
       </div>
     </div>
     <!-- section 3 -->
@@ -269,7 +281,7 @@
         </p>
       </div>
       <div class="divOne">
-        <div class="itemone">
+        <div class="itemone" data-aos="fade-right">
           <div class="section5Header">
             <img
               src="assets/images/hashIcon.webp"
@@ -288,21 +300,28 @@
           />
           <div class="mainText">
             <div class="divOneText">
-              <p class="section3Text">Kempapura Metro/ Bus Stop</p>
+              <p class="section3Text">Kempapura</p>
               <div class="divOneText1">
                 <p class="section3Text">0.0 Kms</p>
                 <p class="section3Text">1 Mins</p>
               </div>
             </div>
             <div class="divOneText">
-              <p class="section3Text">Hebbal Metro</p>
+              <p class="section3Text">Hebbal</p>
               <div class="divOneText1">
                 <p class="section3Text">1.1 Kms</p>
                 <p class="section3Text">3 Mins</p>
               </div>
             </div>
             <div class="divOneText">
-              <p class="section3Text">Nagawara Metro</p>
+              <p class="section3Text">Veerannapalya</p>
+              <div class="divOneText1">
+                <p class="section3Text">1.6 Kms</p>
+                <p class="section3Text">3 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Nagawara</p>
               <div class="divOneText1">
                 <p class="section3Text">2.8 Kms</p>
                 <p class="section3Text">5 Mins</p>
@@ -310,7 +329,7 @@
             </div>
           </div>
         </div>
-        <div class="itemtwo">
+        <div class="itemtwo" data-aos="fade-left">
           <div class="section5Header">
             <img
               src="assets/images/hashIcon.webp"
@@ -325,10 +344,47 @@
             alt="map"
             loading="lazy"
           />
+          <div class="mainText">
+            <div class="divOneText">
+              <p class="section3Text">Kirloskar</p>
+              <div class="divOneText1">
+                <p class="section3Text">1.9 Kms</p>
+                <p class="section3Text">4 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Manyata</p>
+              <div class="divOneText1">
+                <p class="section3Text">5.5 Kms</p>
+                <p class="section3Text">13 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Karle</p>
+              <div class="divOneText1">
+                <p class="section3Text">4.0 Kms</p>
+                <p class="section3Text">9 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">L & T</p>
+              <div class="divOneText1">
+                <p class="section3Text">5.8 Kms</p>
+                <p class="section3Text">14 Mins</p>
+              </div>
+            </div>
+            <div class="divOneText">
+              <p class="section3Text">Phoenix mall</p>
+              <div class="divOneText1">
+                <p class="section3Text">5.5 Kms</p>
+                <p class="section3Text">13 Mins</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="divTwo">
-        <div class="itemone">
+        <div class="itemone" data-aos="fade-up">
           <div class="section5Header">
             <img
               src="assets/images/hashIcon.webp"
@@ -410,12 +466,20 @@
         </div>
       </div>
       <img
+        data-aos="fade-up"
         src="assets/images/section3/upperCicle.webp"
         class="cicleIcon"
         alt="upperCicle"
         loading="lazy"
       />
-      <div class="divFourWrapper">
+      <img
+        data-aos="fade-up"
+        src="assets/images/section3/upperCicleMobile.webp"
+        class="cicleIconMobile"
+        alt="upperCicle"
+        loading="lazy"
+      />
+      <div class="divFourWrapper" data-aos="fade-left">
         <div class="divFour">
           <div class="section5Header">
             <img
@@ -430,7 +494,7 @@
             <div class="sub_header"></div>
             <div class="sub_header">
               <p>PER SQ.FT.</p>
-              <p>PER 500 SQ.FT.</p>
+              <p>500 SQ.FT.</p>
             </div>
           </div>
           <div class="row">
@@ -519,12 +583,11 @@
           <span>RENTAL TRENDS</span> - <span>MICRO MARKET</span>
         </p>
       </div>
-      <img
-        class="graph"
-        src="assets/images/section4/graph.svg"
-        alt="graph"
-        loading="lazy"
-      />
+      <div class="outer">
+        <canvas class="graph" id="chart"></canvas>
+        <div class="absolute">97</div>
+        <div class="absolute1">97</div>
+      </div>
       <p>Source: Cushman & Wakefield</p>
     </div>
     <!-- faq section -->
@@ -541,11 +604,15 @@
       <div class="faqMainContainer">
         <div class="mainDiv5">
           <div class="left">
-            <div class="containerDiv">
+            <div class="clicker containerDiv" onclick="excute('one')">
               <div class="containerDivHeader">
                 <p>What is the Undivided Share of Land (UDS) Percentage ?</p>
-                <span onclick="excute('one')" class="one">-</span>
-                <span onclick="excute('one')" id="oneIcon">+</span>
+                <img class="down" src="/assets/images/dropDown.svg" />
+                <img
+                  id="oneIcon"
+                  class="up"
+                  src="/assets/images/dropDownUp.svg"
+                />
               </div>
               <div class="containerDivMain" id="one">
                 <div class="eachItems">
@@ -587,14 +654,18 @@
                 </div>
               </div>
             </div>
-            <div class="containerDiv">
+            <div class="containerDiv clicker" onclick="excute('two')">
               <div class="containerDivHeader">
                 <p>
                   What all floors and respective areas are sold through this
                   offering ?
                 </p>
-                <span onclick="excute('two')" class="two">-</span>
-                <span onclick="excute('two')" id="twoIcon">+</span>
+                <img class="down" src="/assets/images/dropDown.svg" />
+                <img
+                  id="twoIcon"
+                  class="up"
+                  src="/assets/images/dropDownUp.svg"
+                />
               </div>
               <div class="containerDivMain" id="two">
                 <div class="eachItems">
@@ -633,14 +704,18 @@
                 </div>
               </div>
             </div>
-            <div class="containerDiv">
+            <div class="containerDiv clicker" onclick="excute('three')">
               <div class="containerDivHeader">
                 <p>
                   Is the rental guaranteed even if space is vacant without
                   tenants ?
                 </p>
-                <span onclick="excute('three')" class="three">-</span>
-                <span onclick="excute('three')" id="threeIcon">+</span>
+                <img class="down" src="/assets/images/dropDown.svg" />
+                <img
+                  id="threeIcon"
+                  class="up"
+                  src="/assets/images/dropDownUp.svg"
+                />
               </div>
               <div class="containerDivMain" id="three">
                 <div class="eachItems">
@@ -652,11 +727,15 @@
                 </div>
               </div>
             </div>
-            <div class="containerDiv">
+            <div class="containerDiv clicker" onclick="excute('four')">
               <div class="containerDivHeader">
                 <p>Is the land owned or Joint Development (JD) ?</p>
-                <span onclick="excute('four')" class="four">-</span>
-                <span onclick="excute('four')" id="fourIcon">+</span>
+                <img class="down" src="/assets/images/dropDown.svg" />
+                <img
+                  id="fourIcon"
+                  class="up"
+                  src="/assets/images/dropDownUp.svg"
+                />
               </div>
               <div class="containerDivMain" id="four">
                 <div class="eachItems">
@@ -666,14 +745,18 @@
             </div>
           </div>
           <div class="right">
-            <div class="containerDiv">
+            <div class="containerDiv clicker" onclick="excute('five')">
               <div class="containerDivHeader">
                 <p>
                   Can the investment be transferred to any family member during
                   the tenure ?
                 </p>
-                <span onclick="excute('five')" class="five">-</span>
-                <span onclick="excute('five')" id="fiveIcon">+</span>
+                <img class="down" src="/assets/images/dropDown.svg" />
+                <img
+                  id="fiveIcon"
+                  class="up"
+                  src="/assets/images/dropDownUp.svg"
+                />
               </div>
               <div class="containerDivMain" id="five">
                 <div class="eachItems">
@@ -700,11 +783,15 @@
       </div>
       <div class="mainDiv5">
         <div class="left">
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('one1')">
             <div class="containerDivHeader">
               <p>CENTRALISED AIR CONDITIONING</p>
-              <span onclick="excute('one1')" class="one1">-</span>
-              <span onclick="excute('one1')" id="one1Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="one1Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="one1">
               <div class="eachItems">
@@ -724,11 +811,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('two2')">
             <div class="containerDivHeader">
               <p>STRUCTURAL DESIGN & AMBIENCE</p>
-              <span onclick="excute('two2')" class="two2">-</span>
-              <span onclick="excute('two2')" id="two2Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="two2Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="two2">
               <div class="eachItems">
@@ -797,11 +888,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('three3')">
             <div class="containerDivHeader">
               <p>TELECOM CONNECTIVITY</p>
-              <span onclick="excute('three3')" class="three3">-</span>
-              <span onclick="excute('three3')" id="three3Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="three3Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="three3">
               <div class="eachItems">
@@ -810,11 +905,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('four4')">
             <div class="containerDivHeader">
               <p>LOBBY FINISHES</p>
-              <span onclick="excute('four4')" class="four4">-</span>
-              <span onclick="excute('four4')" id="four4Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="four4Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="four4">
               <div class="eachItems">
@@ -829,11 +928,15 @@
           </div>
         </div>
         <div class="right">
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('five5')">
             <div class="containerDivHeader">
               <p>ELEVATORS</p>
-              <span onclick="excute('five5')" class="five5">-</span>
-              <span onclick="excute('five5')" id="five5Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="five5Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="five5">
               <div class="eachItems">
@@ -850,11 +953,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('six6')">
             <div class="containerDivHeader">
               <p>POWER</p>
-              <span onclick="excute('six6')" class="six6">-</span>
-              <span onclick="excute('six6')" id="six6Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="six6Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="six6">
               <div class="eachItems">
@@ -878,11 +985,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('seven7')">
             <div class="containerDivHeader">
               <p>WATER & SEWAGE TREATMENT PLANT</p>
-              <span onclick="excute('seven7')" class="seven7">-</span>
-              <span onclick="excute('seven7')" id="seven7Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="seven7Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="seven7">
               <div class="eachItems">
@@ -909,11 +1020,15 @@
               </div>
             </div>
           </div>
-          <div class="containerDiv">
+          <div class="containerDiv clicker" onclick="excute('eight8')">
             <div class="containerDivHeader">
               <p>SAFETY & SECURITY SYSTEMS</p>
-              <span onclick="excute('eight8')" class="eight8">-</span>
-              <span onclick="excute('eight8')" id="eight8Icon">+</span>
+              <img class="down" src="/assets/images/dropDown.svg" />
+              <img
+                id="eight8Icon"
+                class="up"
+                src="/assets/images/dropDownUp.svg"
+              />
             </div>
             <div class="containerDivMain" id="eight8">
               <div class="eachItems">
@@ -959,6 +1074,7 @@
               id="phone"
               placeholder="Mobile Number"
               maxlength="10"
+              inputmode="numeric"
               required
             />
             <input
@@ -1001,5 +1117,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
   </body>
 </html>
