@@ -255,6 +255,7 @@ body {
     margin-top: 100px;
     box-shadow: 7px 7px 7px #72B1F029;
     display: flex;
+    font-weight: 500;
     flex-direction: column;
 }
 
